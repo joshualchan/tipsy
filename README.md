@@ -33,7 +33,9 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
 
-Describe any challenges encountered while building the app.
+It took a while getting used to XCode. It's unlike any other environment I've used before. It was a bit confusing navigating  and connecting the storyboard and the view controllers. 
+
+I'm excited for this class and learning more about Swift!
 
 ## License
 
