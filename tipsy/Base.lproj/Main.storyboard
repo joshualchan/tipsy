@@ -134,12 +134,31 @@
                                     <action selector="onChange:" destination="tPe-XQ-q3n" eventType="valueChanged" id="BgI-18-LOt"/>
                                 </connections>
                             </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Color Theme" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0rM-Yx-xr0">
+                                <rect key="frame" x="148" y="327" width="118" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="lfU-dz-MLZ">
+                                <rect key="frame" x="135" y="399" width="131" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="Light"/>
+                                    <segment title="Dark"/>
+                                </segments>
+                                <connections>
+                                    <action selector="onChange2:" destination="tPe-XQ-q3n" eventType="valueChanged" id="bon-X0-oZb"/>
+                                </connections>
+                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" red="0.94333755969999999" green="0.86279982200000005" blue="0.77522675190000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="WME-HD-4KF"/>
                     </view>
                     <navigationItem key="navigationItem" id="gZH-uv-c4h"/>
                     <connections>
+                        <outlet property="colorTheme" destination="lfU-dz-MLZ" id="KeW-go-oL3"/>
                         <outlet property="defaultTipControl" destination="zdT-PB-ZqJ" id="yCI-TR-hzD"/>
                     </connections>
                 </viewController>

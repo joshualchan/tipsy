@@ -26,9 +26,29 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         let index = defaults.integer(forKey: "index")
+        let index2 = defaults.integer(forKey:"ctindex")
         tipControl.selectedSegmentIndex = index
+        if index2 == 1 {
+            overrideUserInterfaceStyle = .dark
+        }
+        else {
+            overrideUserInterfaceStyle = .light
+        }
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        let index = defaults.integer(forKey: "index")
+        let index2 = defaults.integer(forKey:"ctindex")
+        tipControl.selectedSegmentIndex = index
+        if index2 == 1 {
+            overrideUserInterfaceStyle = .dark
+        }
+        else {
+            overrideUserInterfaceStyle = .light
+        }
+    }
+     
 
     @IBAction func onTap(_ sender: Any) {
         print("Hello")

@@ -14,6 +14,9 @@ class SettingsViewController: UIViewController {
     
     
     @IBOutlet weak var defaultTipControl: UISegmentedControl!
+    
+    @IBOutlet weak var colorTheme: UISegmentedControl!
+    
     let defaults = UserDefaults.standard
     
     override func viewDidLoad() {
@@ -21,9 +24,17 @@ class SettingsViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    override func viewDidAppear(_ animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         let index = defaults.integer(forKey: "index")
         defaultTipControl.selectedSegmentIndex = index
+        let index2 = defaults.integer(forKey: "ctindex")
+        if index2 == 0{
+            overrideUserInterfaceStyle = .light
+        }
+        else{
+            overrideUserInterfaceStyle = .dark
+        }
+        colorTheme.selectedSegmentIndex = index2
     }
     
     
@@ -31,6 +42,20 @@ class SettingsViewController: UIViewController {
         let index = defaultTipControl.selectedSegmentIndex
         defaults.set(index, forKey: "index")
         defaults.synchronize()
+    }
+    
+    
+    @IBAction func onChange2(_ sender: Any) {
+        let index = colorTheme.selectedSegmentIndex
+        if index == 0{
+            overrideUserInterfaceStyle = .light
+        }
+        else{
+            overrideUserInterfaceStyle = .dark
+        }
+        defaults.set(index, forKey: "ctindex")
+        defaults.synchronize()
+        
     }
     
     /*
