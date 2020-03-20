@@ -1,19 +1,19 @@
-# Pre-work - *Name of App Here*
+# Pre-work - Tipsy
 
-**Name of your app** is a tip calculator application for iOS.
+Tipsy is a tip calculator application for iOS.
 
-Submitted by: **Your Name Here**
+Submitted by: Joshua Chan
 
-Time spent: **X** hours spent in total
+Time spent: 3 hours spent in total
 
 ## User Stories
 
 The following **required** functionality is complete:
 
-* [ ] User can enter a bill amount, choose a tip percentage, and see the tip and total values.
+* [x] User can enter a bill amount, choose a tip percentage, and see the tip and total values.
 
 The following **optional** features are implemented:
-* [ ] Settings page to change the default tip percentage.
+* [x] Settings page to change the default tip percentage.
 * [ ] UI animations
 * [ ] Remembering the bill amount across app restarts (if <10mins)
 * [ ] Using locale-specific currency and currency thousands separators.
@@ -27,17 +27,19 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='./prework.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
 
-Describe any challenges encountered while building the app.
+It took a while getting used to XCode. It's unlike any other environment I've used before. It was a bit confusing navigating  and connecting the storyboard and the view controllers. 
+
+I'm excited for this class and learning more about Swift!
 
 ## License
 
-    Copyright [yyyy] [name of copyright owner]
+    Copyright 2020 Joshua Chan
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
